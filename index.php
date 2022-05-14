@@ -23,15 +23,8 @@ $catToy = new toys("Hartz Just For Cats",7,"Cats","Plastic");
 $dogCage = new cages ("MidWest Homes for Pets iCrate, Single Door & Double Door Dog Crates", 45,"Dogs","Steel",8,"30 x 19 x 21 inches");
 
 
-$vito = new users ("Vito","Vito_scaletta@mail.it","male",1209348745657843,2000,8,true);
+$vito = new users ("Vito","Vito_scaletta@mail.it","male",1209348745657843,2050,8,true);
 var_dump($vito);
 var_dump($dogCage);
-
-try {
-    echo $vito -> creditCardValidity();
-    } catch (Exception $notValid) {
-    echo "Your card is not valid";
-    }
-
 
 ?>

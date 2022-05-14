@@ -18,11 +18,11 @@ trait creditCard{
             $this -> validCreditCard = true;
             
           
-        }elseif ($_creditCardMonth > $month && $_creditCardYear = $year ) {
+        }elseif ($_creditCardMonth > $month && $_creditCardYear == $year ) {
             $this -> validCreditCard = true;
         }else{
             $this -> validCreditCard = false;
-            throw new notValid('Is not a number');
+            throw new Exception('Is not a number');
 
         }
     }
