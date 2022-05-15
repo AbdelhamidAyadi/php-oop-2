@@ -22,7 +22,7 @@ trait creditCard{
             $this -> validCreditCard = true;
         }else{
             $this -> validCreditCard = false;
-            throw new Exception('Is not a number');
+            throw new Exception('Your card is expired.');
 
         }
     }

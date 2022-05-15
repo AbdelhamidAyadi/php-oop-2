@@ -25,6 +25,14 @@ $dogCage = new cages ("MidWest Homes for Pets iCrate, Single Door & Double Door 
 
 $vito = new users ("Vito","Vito_scaletta@mail.it","male",1209348745657843,2050,8,true);
 var_dump($vito);
+
 var_dump($dogCage);
+
+try {
+    $vito -> creditCardValidity($vito -> creditCardYear,$vito -> creditCardMonth);
+} catch (Exeption $e) {
+    echo $e->getMessage();
+}
+
 
 ?>
